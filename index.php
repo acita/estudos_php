@@ -7,7 +7,7 @@ use Cliente\CadastroCliente;
 $cad = new CadastroCliente();
 
 $cad->setNome("Alex");
-$cad->setEmail("teste@gmail.com");
+$cad->setEmail("acita@gmail.com");
 $cad->setSenha("123456");
 //echo $cad;
 
