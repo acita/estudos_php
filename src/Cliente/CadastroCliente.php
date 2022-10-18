@@ -9,4 +9,8 @@ class CadastroCliente extends \Cadastro
         echo "Foi registrada uma venda para o cliente " . $this->getNome();
     }
 
+    public function registrarPedido(){
+        echo "Seu pedido foi gerado para o email" . $this->getEmail();
+    }
+
 }

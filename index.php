@@ -9,6 +9,8 @@ $cad = new CadastroCliente();
 $cad->setNome("Alex");
 $cad->setEmail("teste@gmail.com");
 $cad->setSenha("123456");
-echo $cad;
+//echo $cad;
 
 $cad->registrarVenda();
+echo "<br/>";
+$cad->registrarPedido();
