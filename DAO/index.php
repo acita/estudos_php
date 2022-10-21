@@ -8,4 +8,3 @@ $user = new Usuario();
 // $user->loadById(3);
 
 $user->loadAll();
-
