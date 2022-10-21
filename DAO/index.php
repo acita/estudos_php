@@ -1,9 +1,11 @@
 <?php
 
 require_once("config.php");
+echo "agoravai.php";
 
-$sql = new Sql();
+echo "<br/>";
+$user = new Usuario();
+// $user->loadById(3);
 
-$usuarios = $sql->select("SELECT * FROM tb_usuarios ORDER BY dt_cadastro");
+$user->loadAll();
 
-echo json_encode($usuarios);
