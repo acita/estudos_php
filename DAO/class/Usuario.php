@@ -7,7 +7,8 @@ class Usuario {
     private $des_senha;
     private $dt_cadastro;
     
-    public function getIdUsuario(){
+    public function getIdUsuario()
+    {
         return $this->idusuario;
     }
 
@@ -16,7 +17,8 @@ class Usuario {
         $this->idusuario = $value;
     }
 
-    public function getDeslogin(){
+    public function getDeslogin()
+    {
         return $this->des_login;
     }
 
@@ -34,7 +36,8 @@ class Usuario {
         $this->des_senha = $value;
     }
 
-    public function getDtCadastro(){
+    public function getDtCadastro()
+    {
         return $this->dt_cadastro;
     }
 
@@ -53,7 +56,8 @@ class Usuario {
         ));
     }
 
-    public function loadById($id){
+    public function loadById($id)
+    {
         $sql = new Sql();
         $results = $sql->select("SELECT * FROM tb_usuarios WHERE idusuario = :ID",
         array(":ID" => $id)
@@ -68,7 +72,8 @@ class Usuario {
         }
     }
 
-    public function loadAll(){
+    public function loadAll()
+    {
         $sql = new Sql();
         $results = $sql->select("SELECT * FROM tb_usuarios");
 
