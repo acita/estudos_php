@@ -72,7 +72,9 @@ class Usuario {
         $sql = new Sql();
         $results = $sql->select("SELECT * FROM tb_usuarios");
 
-        var_dump($results);
+      
+
+        print_r($results);
 
     }
 
