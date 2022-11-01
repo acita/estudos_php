@@ -13,5 +13,10 @@ require_once("config.php");
 // echo json_encode($lista);
 
 // carrega itens por meio de uma string
-$search = Usuario::search("ca");
-echo json_encode($search);
+// $search = Usuario::search("ca");
+// echo json_encode($search);
+
+//carrega um usuário usando login e senha
+// $usuario = new Usuario();
+// $usuario->login("rmilito", "SD$#999456");
+// echo $usuario;

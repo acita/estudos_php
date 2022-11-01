@@ -87,5 +87,32 @@ class Usuario {
         ));
     }
 
+    public function login($login, $senha)
+    {
+        $sql = new Sql();
+        $results = $sql->select("SELECT * FROM tb_usuarios WHERE des_login = :LOGIN AND des_senha = :SENHA",
+        array(
+            ":LOGIN" => $login,
+            ":SENHA" => $senha
+        )
+        );
+
+        if (count($results) > 0){
+
+            $row = $results[0];
+
+            $this->setIdUsuario($row["id_usuario"]);
+            $this->setDesLogin($row["des_login"]);
+            $this->setDesSenha($row["des_senha"]);
+            $this->setdtCadastro(new DateTime($row["dt_cadastro"]));
+
+        } else {
+
+            throw new Exception("Login e/ou senha inválidos");
+
+        }
+
+    }
+
 }
 
