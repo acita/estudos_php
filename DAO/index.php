@@ -21,7 +21,7 @@ require_once("config.php");
 // echo $usuario;
 
 //cadastra usuário e recupera último cadastrado
-// $user = new Usuario("rlopes", 789213);
+// $user = new Usuario("gsilva", "44ac856s");
 // $user->insert();
 // echo $user;
 
