@@ -30,3 +30,12 @@ require_once("config.php");
 // $usuario->loadById(2);
 // $usuario->update("aurias2", "mudar@789");
 // echo $usuario;
+
+
+//deletando usuário pelo id
+// $usuario = new Usuario();
+// $id = $usuario->loadById(6);
+// $usuario->delete($id);
+// //exibindo lista depois da deleção
+// $lista = Usuario::loadAll();
+// echo json_encode($lista);
