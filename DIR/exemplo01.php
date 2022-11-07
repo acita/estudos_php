@@ -1,6 +1,5 @@
 <?php
 
-
 //código para criar/excluir a pasta images 
 $name = "images";
 
