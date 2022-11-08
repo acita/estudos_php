@@ -12,5 +12,4 @@ try{
         "file"=>$e->getFile(),
         "code"=>$e->getCode()
     ));
-
 }

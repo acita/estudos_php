@@ -17,18 +17,18 @@ require_once("config.php");
 
 //carrega um usuário usando login e senha
 // $usuario = new Usuario();
-// $usuario->login("rmilito", "SD$#999456");
+// $usuario->login("teste", "SDt999456");
 // echo $usuario;
 
 //cadastra usuário e recupera último cadastrado
-// $user = new Usuario("gsilva", "44ac856s");
+// $user = new Usuario("teste2", "sasasaa");
 // $user->insert();
 // echo $user;
 
 //alterando dados do usuário pelo id
 // $usuario = new Usuario();
 // $usuario->loadById(2);
-// $usuario->update("aurias2", "mudar@789");
+// $usuario->update("teste3", "mudar@789");
 // echo $usuario;
 
 
